@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CHA WEBSITE</title>
+<style>
+  body {
+    font-family: 'Times New Roman', serif;
+    margin: 0;
+    background-color: black;
+  }
+
+  header {
+    background: maroon;
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+    animation: fadeInDown 5s ease;
+  }
+
+  @keyframes fadeInDown {
+    from { opacity: 0; transform: translateY(30px); }
+    to { opacity: 1.5; transform: translateY(0); }
+  }
+
+  header h1 {
+    font-size: 30px;
+    margin: 0;
+    animation: popIn 2s ease;
+  }
+
+  @keyframes popIn {
+    from { opacity: 0; transform: scale(0.9); }
+    to { opacity: 1; transform: scale(1); }
+  }
+
+  nav {
+    background: #333;
+    overflow: hidden;
+  }
+
+  nav a {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+  }
+
+  nav a:hover {
+    background: #ddd;
+    color: black;
+  }
+
+  section {
+    padding: 40px;
+    background: white;
+    margin: 20px auto;
+    width: 90%;
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.1);
+  }
+
+  h2 {
+    text-align: justify;
+    color: maroon;
+    animation: fadeInUp 1.5s ease;
+  }
+
+  @keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(30px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  #home p {
+    text-align: justify;
+    font-size: 18px;
+  }
+
+  .edu-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    text-align: justify;
+  }
+
+  .edu-item {
+    width: 250px;
+    margin: 20px;
+  }
+
+  .edu-item img {
+    width: 100px;
+    height: 100px;
+  }
+
+  .scroll-container {
+    display: flex;
+    overflow-x: auto;
+    gap: 10px;
+    scroll-behavior: smooth;
+  }
+
+  .scroll-container img {
+    width: 300px;
+    height: 200px;
+    border-radius: 10px;
+  }
+
+  .about-images {
+    display: flex;
+    overflow-x: auto;
+    gap: 10px;
+  }
+
+  .about-images img {
+    width: 250px;
+    height: 200px;
+    border-radius: 10px;
+  }
+
+  form {
+    max-width: 400px;
+    margin: auto;
+    display: flex;
+    justify-content: justify;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  input, textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+
+  button {
+    padding: 10px;
+    background: maroon;
+    color: white;
+    border: none;
+    border-radius: 5px;
+  }
+
+  button:hover {
+    background: maroon;
+  }
+
+  footer {
+    text-align: center;
+    background: #333;
+    color: white;
+    padding: 10px;
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>My Website</h1>
+  <p>Welcome to my personal portfolio</p>
+</header>
+
+<nav>
+  <a href="#home">Home</a>
+  <a href="#education">Education</a>
+  <a href="#certificates">Certificates</a>
+  <a href="#about">About</a>
+  <a href="#works">Works</a>
+  <a href="#contact">Contact</a>
+</nav>
+
+<section id="home">
+  <h2>Home</h2>
+  <p>Hello! I’m Charish Inoferio, and welcome to my creative and personal space. Here, you’ll see my educational background,achivement, works, and contact details. Let’s explore together!</p>
+</section>
+<section id="education">
+  <h2>Education</h2>
+  <div class="edu-container">
+    <div class="edu-item">
+      <img src="images.png"alt="QUEENS ROW ELEMENTARY SCHOOL">
+      <p><b>QUEENS ROW ELEMENTARY SCHOOL</b>
+    </div>
+    <div class="edu-item">
+      <img src="CBNHS.png" alt="CBNHS-SPRINGVILLE">
+      <p><b>CBNHS-SPRINGVILLE</b><br>
+    </div>
+    <div class="edu-item">
+      <img src="SHS (2).png" alt="SHS SAN NICHOLAS 3"><p>SHS DAN NICHOLAS 3<b></b><br>
+    </div>
+  </div>
+</section>
+
+
+<section id="certificates">
+  <h2>Certificates</h2>
+  <p>Here are some of my achievements and certificates:</p>
+  <div class="scroll-container">
+    <img src="20251101_174945 (2).jpg " alt="SDRRM">
+    <img src="20251101_175004 (2).jpg" alt="WITH HONOR">
+    
+  </div>
+</section>
+
+
+<section id="about">
+  <h2>About Me</h2>
+  <p>I'm a passionate learner and creator who loves technology, design, and self-improvement. I believe in learning by doing and sharing knowledge to inspire others.</p>
+  <div class="about-images">
+    <img src="Messenger_creation_051A1CFF-37BB-4A7A-8CBF-D927FE6F4DE9 (1).jpeg" alt="">
+    <img src="Messenger_creation_EA17A7E7-D42F-4E1A-909D-CD7D8D61419B (2).jpeg" alt="">
+    <img src="Messenger_creation_3461A810-C2DE-41C7-B1F3-D5B2E17886EF (1).jpeg" alt="">
+    <img src="received_1824070154731769 (1).jpeg" alt="">
+    <img src="CCHAH.jpg" alt="">
+  </div>
+</section>
+
+
+<section id="works">
+  <h2>My Works</h2>
+  <p>Some of my completed projects and designs:</p>
+  <div class="scroll-container">
+    <img src="CONTINATION 1.1 (ID).png" alt="PT1">
+    <img src="Null (AI).png" alt="PT2">
+    <img src="PT3GRADESINOFERIOANDAYA.png" alt="PT3">
+    <img src="PT4INOFERIOARRAYS.png" alt="PT6">
+    <img src="PT5INOFERIOANDAYACS.png" alt="PT5">
+    <img src="PT6ANDAYAINOFERIOLO.png" alt="PT6">
+  </div>
+</section>
+
+
+<section id="contact">
+  <h2>Contact Me</h2>
+  <form>
+    <input type="email" placeholder="Enter your email" required>
+    <textarea placeholder="Your message" rows="4" required></textarea>
+    <button type="submit">Send Message</button>
+  </form>
+  <br>
+  <div style="text-align:center;">
+    <p><b>Contact No:</b> 0916-196-5057</p>
+    <p><b>Email:</b> inoferiocharish@gmail.com</p>
+    <p><b>Facebook:</b> fb.com/Charish Inoferio</p>
+  </div>
+</section>
+
+<footer>
+  <p>© 2025 CHA WEBSITE | All Rights Reserved</p>
+</footer>
+  10 * 10
+</html>
+
